@@ -1,2 +1,5 @@
-# nomad-examples
-Examples for working with Hashicorp Nomad
+# Nomad Examples
+
+> Examples for working with Hashicorp Nomad
+
+## Getting Started
