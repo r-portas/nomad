@@ -1,0 +1,10 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    uid: prometheus
+    type: prometheus
+    access: server
+    url: http://${NOMAD_ADDR_prometheus}
+    isDefault: true
+    editable: false

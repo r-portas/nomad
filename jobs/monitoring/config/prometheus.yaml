@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  # Scrape the metrics that Nomad publishes
+  - job_name: "nomad"
+    metrics_path: "/v1/metrics"
+    static_configs:
+      # Get the IP address of the client that Prometheus is running on,
+      # works fine for a single server, but not for a cluster
+      - targets: ['{{env "attr.unique.network.ip-address"}}:4646']
+    params:
+      format: ["prometheus"]
