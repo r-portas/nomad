@@ -58,7 +58,7 @@ All host metrics are namespaced under `nomad_client_host`
 | Metric | Unit | Description |
 | --- | --- | --- |
 | `nomad_client_allocs_memory_usage` | Bytes | Memory usage of the allocation |
-| `nomad_client_allocs_total_percent` | Percentage | Total CPU resources consumed by the task across all cores |
+| `nomad_client_allocs_cpu_total_percent` | Percentage | Total CPU resources consumed by the task across all cores |
 
 TODO:
 
