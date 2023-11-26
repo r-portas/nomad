@@ -13,7 +13,7 @@ job "whoami" {
 
       tags = [
         "traefik.enable=true",
-        "traefik.http.routers.http.rule=Host(`whoami.nomad.localhost`)",
+        "traefik.http.routers.http.rule=Path(`/whoami`)",
       ]
     }
 
