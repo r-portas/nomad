@@ -1,6 +1,6 @@
-# Nomad Examples
+# Nomad
 
-> Examples for working with Hashicorp Nomad
+> Examples, documentation and tools for working with Hashicorp Nomad
 
 ## Docs
 
