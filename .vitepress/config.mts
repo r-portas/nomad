@@ -5,6 +5,7 @@ import { getJobItems, getDocsItems } from "./util.mts";
 export default defineConfig({
   title: "Roy's Nomad Docs",
   description: "A collection of notes and resources about HashiCorp Nomad",
+  ignoreDeadLinks: [/^https?:\/\/localhost/],
   themeConfig: {
     search: {
       provider: "local",
