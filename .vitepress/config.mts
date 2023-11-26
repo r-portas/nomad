@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { getJobItems, getDocsItems } from "./util.mts";
+// import { getJobItems, getDocsItems } from "./util.mts";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,14 +18,14 @@ export default defineConfig({
     ],
 
     sidebar: [
-      {
-        text: "Docs",
-        items: getDocsItems(),
-      },
-      {
-        text: "Jobs",
-        items: getJobItems(),
-      },
+      // {
+      //   text: "Docs",
+      //   items: getDocsItems(),
+      // },
+      // {
+      //   text: "Jobs",
+      //   items: getJobItems(),
+      // },
       {
         text: "Examples",
         items: [
