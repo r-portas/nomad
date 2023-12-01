@@ -9,6 +9,12 @@ export default defineConfig({
   themeConfig: {
     search: {
       provider: "local",
+      options: {
+        detailedView: true,
+      },
+    },
+    editLink: {
+      pattern: "https://github.com/r-portas/nomad/edit/main/:path",
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [

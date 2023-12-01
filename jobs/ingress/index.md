@@ -1,6 +1,6 @@
 # Ingress
 
-## Getting Started
+## Usage
 
 1. Deploy Traefik
 
@@ -8,13 +8,20 @@
     nomad job run traefik.nomad.hcl
     ```
 
-2. Deploy a basic whomai service
+2. Deploy a basic whoami service
 
     ```bash
     nomad job run whoami.nomad.hcl
     ```
 
 3. Visit `http://<docker-desktop-ip>/whoami`
+
+## Job Specs
+
+::: code-group
+<<< ./traefik.nomad.hcl
+<<< ./whoami.nomad.hcl
+:::
 
 ## Resources
 

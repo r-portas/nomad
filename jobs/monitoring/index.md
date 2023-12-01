@@ -2,13 +2,11 @@
 
 > A basic monitoring stack
 
+<<< ./monitoring.nomad.hcl
+
 ## Requirements
 
 - [Telemetry](https://developer.hashicorp.com/nomad/docs/configuration/telemetry) must be enabled in the Client configuration, the dev server already configures this.
-
-## Resources
-
-- [Monitoring Nomad](https://developer.hashicorp.com/nomad/docs/operations/monitoring-nomad)
 
 ## Useful Metrics
 
@@ -65,3 +63,7 @@ TODO:
 - (Job / Allocation) status metrics
 - Server metrics
 - Nomad process metrics
+
+## Resources
+
+- [Monitoring Nomad](https://developer.hashicorp.com/nomad/docs/operations/monitoring-nomad)

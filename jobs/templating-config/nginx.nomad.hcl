@@ -2,6 +2,7 @@ job "nginx" {
   group "nginx" {
     network {
       port "nginx" {
+        static = 8000
         to = 80
       }
     }

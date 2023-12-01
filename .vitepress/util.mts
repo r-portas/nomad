@@ -1,5 +1,6 @@
 import { readdirSync, lstatSync } from "fs";
 import { join } from "path";
+import capitalize from "lodash.capitalize";
 
 /**
  * Gets a list of subdirectories in the given path
@@ -23,5 +24,8 @@ export function getJobItems(): { text: string; link: string }[] {
 export function getDocsItems(): { text: string; link: string }[] {
   return readdirSync("docs")
     .filter((file) => file.endsWith(".md"))
-    .map((file) => ({ text: file, link: `/docs/${file}` }));
+    .map((file) => ({
+      text: capitalize(file.replace(".md", "")),
+      link: `/docs/${file}`,
+    }));
 }

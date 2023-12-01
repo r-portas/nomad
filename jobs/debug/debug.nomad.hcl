@@ -1,4 +1,3 @@
-
 job "debug" {
   group "debug" {
     task "debug" {
